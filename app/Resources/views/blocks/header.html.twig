@@ -1,0 +1,14 @@
+<div id="header-wrap">
+    <div id="head-logo"> 
+        <a href="JavaScript:window.open('http://javascript.ru','javascript', 'width=800,height=600');">
+            <img src="{{ asset('img/logo4.png') }}" id="logoPicture" class="headimage" alt="Логотип" name="logo"> 
+        </a>
+    </div>
+    {% include 'blocks/admin.html.twig' %}
+    <div id="head-menu">
+        {{ render(controller('AppBundle:Default:menu')) }}
+    </div>
+</div>
+<div id="main-pict">
+    <a><img src="{{ asset('img/picture.jpg') }}" alt="Картинка" class="main-picture"></a>
+</div>

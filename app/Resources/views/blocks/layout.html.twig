@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id="main-table">
+        {% include 'blocks/header.html.twig' %}
+        <div id="main-cont">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="main-adv">
+            {% include 'blocks/adv.html.twig' %}
+        </div>
+        <div id="main-copy">
+            {% include 'blocks/copy.html.twig' %}
+        </div>
+    </div>
+{% endblock %}

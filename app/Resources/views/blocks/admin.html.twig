@@ -1,0 +1,7 @@
+<div id="admin"> 
+    <a href="{{ path('admin_login')}}">Админка</a>
+    {% if app.user %}
+        <p>Здравствуйте, {{ app.user.username }}</p>
+        <a href="{{ path('admin_logout')}}">Выход</a>
+    {% endif %}
+</div>
